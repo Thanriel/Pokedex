@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+
+* 
+{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;;
+}
+
+.container
+{
+    padding: 40px;
+    margin: 0 auto;    
+}
+
+.pokedex
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+}
+
+h2
+{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 15;
+    margin-bottom: 5px;
+}
+
+.type
+{
+    color: white;
+    padding: 4px;
+    margin-right: 8px;
+    text-transform: lowercase;
+}
+
+.grass
+{
+    background-color: #2f7d21;
+    border-radius: 19%;
+    align-items: center;
+}
+
+.poison
+{
+    background-color: #6f4585;;
+    border-radius: 19%;
+}
+
+.fire
+{
+    background-color: #ffa955;
+    
+    border-radius: 19%;
+}
+
+.flying
+{
+    background-color: #5166a8;
+    
+    border-radius: 19%;
+}
+
+.water
+{
+    background-color: #74b9ff;
+    
+    border-radius: 19%;
+}
+
+.bug
+{
+    background-color: #ccdd66;
+    
+    border-radius: 19%;
+}
+
+.normal
+{
+    background-color: #c3c9d0;
+    
+    border-radius: 19%;
+}
+
+.electric
+{
+    background-color: #ffdd66;
+    color: rgb(61, 58, 58);
+    border-radius: 19%;
+}
+
+.ground
+{
+    background-color: #e9966b;
+    
+    border-radius: 19%;
+}
+
+.fairy
+{
+    background-color: #fcb8f6;
+    
+    border-radius: 19%;
+}
+
+.fighting
+{
+    background-color: #ed6787;
+    
+    border-radius: 19%;
+}
+
+.psychic
+{
+    background-color: #ff9fae;
+    
+    border-radius: 19%;
+}
+
+.rock
+{
+    background-color: #d4c68f;
+    
+    border-radius: 19%;
+}
+
+.steel
+{
+    background-color: #80b0c4;
+    
+    border-radius: 19%;
+}
+
+.ice
+{
+    background-color: #89f1e8;
+    
+    border-radius: 19%;
+}
+
+.ghost
+{
+    background-color: #8585cd;
+    
+    border-radius: 19%;
+}
+
+.dragon
+{
+    background-color: #00457d;
+    border-radius: 19%;
+}
+
+.card-primario
+{
+    list-style: none;
+    padding: 40px;
+    color: #222;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 20px;
+    position: relative;
+}
