@@ -1,10 +1,13 @@
+const url = `https://pokeapi.co/api/v2/pokemon/`
+
+
 const fetchPokemon = () => {
-    const getPokemonUrl = id => `https://pokeapi.co/api/v2/pokemon/${id}`
+    const getPokemon = id => `${url}${id}`
 
     const pokemonPromises = [] 
 
     for (let i = 1; i <= 150; i++) {
-        pokemonPromises.push(fetch(getPokemonUrl(i)).then(response => response.json()))
+        pokemonPromises.push(fetch(getPokemon(i)).then(response => response.json()))
     }
 
     Promise.all(pokemonPromises)
@@ -14,11 +17,13 @@ const fetchPokemon = () => {
                 const types = pokemon.types.map(typeInfo => typeInfo.type.name)
 
                 accumullator += 
-                    `<li class="card-primario">
-                        <img class="card-image" alt="${pokemon.name}" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png">
+                    `
+                    <li class="card-primario" onclick="getUniquePokemon(${pokemon.id})">
+                        <img class="card-image" alt="${pokemon.name}" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png" ${onclick="console.log('teste')"}>
                         <h2 clas="name">#${pokemon.id}  ${pokemon.name}</h2>
                         <span class="card-subtitle type ${types[0]}">${types[0]}</span><span card-subtitle class="${types[1]} type">${types[1]}</span>
-                    </li>`
+                    </li>
+                    `
                 return accumullator
             }, '')
 
@@ -30,3 +35,11 @@ const fetchPokemon = () => {
 
 
 fetchPokemon()
+
+
+
+function getUniquePokemon (id) {
+    location.href = "poke-info.html"
+    const getPokemon = `${url}${id}`
+
+}
