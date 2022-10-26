@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
 
 * 
 {
@@ -10,10 +8,14 @@
     padding: 0px;;
 }
 
-.container
+.title-pokedex
 {
-    padding: 40px;
-    margin: 0 auto;    
+    font-family: 'Fuzzy Bubbles', cursive;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-weight: bolder;
+    font-size: 40px;
 }
 
 .pokedex
@@ -38,6 +40,7 @@ h2
     padding: 4px;
     margin-right: 8px;
     text-transform: lowercase;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .grass
@@ -47,10 +50,20 @@ h2
     align-items: center;
 }
 
+.grass-back
+{
+    background-color: #b7f1ac52;
+}
+
 .poison
 {
-    background-color: #6f4585;;
+    background-color: #9059ad;
     border-radius: 19%;
+}
+
+.poison-back
+{
+    background-color: #ce8df173;
 }
 
 .fire
@@ -60,11 +73,21 @@ h2
     border-radius: 19%;
 }
 
+.fire-back
+{
+    background-color: #f8b97a60;
+}
+
 .flying
 {
     background-color: #5166a8;
     
     border-radius: 19%;
+}
+
+.flying-back
+{
+    background-color: #8da6f8b0;
 }
 
 .water
@@ -74,11 +97,21 @@ h2
     border-radius: 19%;
 }
 
+.water-back
+{
+    background-color: #97c8f875;
+}
+
 .bug
 {
     background-color: #ccdd66;
     
     border-radius: 19%;
+}
+
+.bug-back
+{
+    background-color: #e4f39283;
 }
 
 .normal
@@ -88,11 +121,21 @@ h2
     border-radius: 19%;
 }
 
+.normal-back
+{
+    background-color: #e5e8eb9f;
+}
+
 .electric
 {
     background-color: #ffdd66;
     color: rgb(61, 58, 58);
     border-radius: 19%;
+}
+
+.electric-back
+{
+    background-color: #f8df8354;
 }
 
 .ground
@@ -102,53 +145,86 @@ h2
     border-radius: 19%;
 }
 
+.ground-back
+{
+    background-color: #f0b0907c;
+}
+
 .fairy
 {
     background-color: #fcb8f6;
-    
     border-radius: 19%;
+}
+
+.fairy-back
+{
+    background-color: #f8c0f2a4;
 }
 
 .fighting
 {
     background-color: #ed6787;
-    
     border-radius: 19%;
+}
+
+.fighting-back
+{
+    background-color: #eeacbbb4;
 }
 
 .psychic
 {
     background-color: #ff9fae;
-    
     border-radius: 19%;
+}
+
+.psychic-back
+{
+    background-color: #f7ced4b0;
 }
 
 .rock
 {
     background-color: #d4c68f;
-    
     border-radius: 19%;
+}
+
+.rock-back
+{
+    background-color: #f0d77670;
 }
 
 .steel
 {
     background-color: #80b0c4;
-    
     border-radius: 19%;
+}
+
+.steel-back
+{
+    background-color: #80b0c460;
 }
 
 .ice
 {
     background-color: #89f1e8;
-    
     border-radius: 19%;
+}
+
+.ice-back
+{
+    background-color: #89f1e850;
 }
 
 .ghost
 {
-    background-color: #8585cd;
-    
+    background-color: #8585cd;   
     border-radius: 19%;
+}
+
+.ghost-back
+{
+    background-color: #9c9cec80; 
 }
 
 .dragon
@@ -157,10 +233,15 @@ h2
     border-radius: 19%;
 }
 
+.dragon-back
+{
+    background-color: #67a0cf7e;
+}
+
 .card-primario
 {
     list-style: none;
-    padding: 40px;
+    padding: 10px;
     color: #222;
     text-align: center;
     text-transform: capitalize;
